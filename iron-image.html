@@ -121,7 +121,9 @@ Custom property | Description | Default
     <img id="img" alt$="[[alt]]" hidden$="[[_computeImgHidden(sizing)]]">
     <div id="placeholder"
       hidden$="[[_computePlaceholderHidden(preload, fade, loading, loaded)]]"
-      class$="[[_computePlaceholderClassName(preload, fade, loading, loaded)]]"></div>
+      class$="[[_computePlaceholderClassName(preload, fade, loading, loaded)]]">
+      <content></content>
+    </div>
   </template>
 
   <script>
