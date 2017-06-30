@@ -138,7 +138,9 @@ Custom property | Description | Default
       on-error="_imgOnError">
     <div id="placeholder"
       hidden$="[[_computePlaceholderHidden(preload, fade, loading, loaded)]]"
-      class$="[[_computePlaceholderClassName(preload, fade, loading, loaded)]]"></div>
+      class$="[[_computePlaceholderClassName(preload, fade, loading, loaded)]]">
+      <slot></slot>
+    </div>
   </template>
 
   <script>
